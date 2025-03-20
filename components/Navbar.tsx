@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { auth, signOut, signIn } from '@/auth';
 
-const Navbar = async () => {
+export const Navbar = async () => {
   const session = await auth();
 
   async function onSignIn() {
@@ -48,5 +48,3 @@ const Navbar = async () => {
     </header>
   );
 };
-
-export default Navbar;
