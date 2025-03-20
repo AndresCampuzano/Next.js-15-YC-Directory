@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import localFont from 'next/font/local';
+import './globals.css';
 import React from 'react';
 
 const workSans = localFont({
@@ -33,6 +33,11 @@ const workSans = localFont({
     {
       path: './fonts/WorkSans-Regular.ttf',
       weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/WorkSans-Black.ttf',
+      weight: '900',
       style: 'normal',
     },
     {
